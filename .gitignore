@@ -1,0 +1,32 @@
+# NetBeans project-specific
+nbproject/private/
+build/
+dist/
+nbbuild/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Compiled class files
+*.class
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Java-specific
+*.jar
+*.war
+*.ear
+
+# User-specific
+*.iml
+.idea/
