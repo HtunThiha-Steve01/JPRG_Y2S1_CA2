@@ -1,8 +1,3 @@
-package CA2;
-
-import javax.swing.*;
-import java.awt.*;
-
 public class StudentLibrarySystem extends javax.swing.JFrame {
 
     /**
@@ -45,7 +40,7 @@ public class StudentLibrarySystem extends javax.swing.JFrame {
         btnBookNext = new javax.swing.JButton();
         btnBookFirst = new javax.swing.JButton();
         btnBookLast = new javax.swing.JButton();
-        btnAddNewBook = new javax.swing.JButton();
+        btnReturnBook = new javax.swing.JButton();
         pnlSearchSelected = new javax.swing.JPanel();
         lblSearch = new javax.swing.JLabel();
         radioBtnSearchByStudent = new javax.swing.JRadioButton();
@@ -164,10 +159,10 @@ public class StudentLibrarySystem extends javax.swing.JFrame {
 
         btnBookLast.setText("Last");
 
-        btnAddNewBook.setText("Return Book");
-        btnAddNewBook.addActionListener(new java.awt.event.ActionListener() {
+        btnReturnBook.setText("Return Book");
+        btnReturnBook.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddNewBookActionPerformed(evt);
+                btnReturnBookActionPerformed(evt);
             }
         });
 
@@ -187,7 +182,7 @@ public class StudentLibrarySystem extends javax.swing.JFrame {
                             .addComponent(txtBookTitle)
                             .addComponent(txtBookAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addComponent(btnAddNewBook, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(btnReturnBook, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(pnlBookInfoLayout.createSequentialGroup()
                         .addGroup(pnlBookInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlBookInfoLayout.createSequentialGroup()
@@ -227,7 +222,7 @@ public class StudentLibrarySystem extends javax.swing.JFrame {
                             .addComponent(lblBookAuthor)))
                     .addGroup(pnlBookInfoLayout.createSequentialGroup()
                         .addGap(16, 16, 16)
-                        .addComponent(btnAddNewBook, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnReturnBook, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(pnlBookInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblBookISBN)
@@ -311,7 +306,7 @@ public class StudentLibrarySystem extends javax.swing.JFrame {
 
         btnDisplayStudentInformation.setText("👤 Display Student Information");
 
-        btnDisplayBookInformation.setText("📕 Display Book Information");
+        btnDisplayBookInformation.setText("📕 Borrow Book");
 
         btnExitProgram.setText("🔚 Exit");
 
@@ -380,9 +375,9 @@ public class StudentLibrarySystem extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_radioBtnSearchByBookActionPerformed
 
-    private void btnAddNewBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddNewBookActionPerformed
+    private void btnReturnBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnBookActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddNewBookActionPerformed
+    }//GEN-LAST:event_btnReturnBookActionPerformed
 
     /**
      * @param args the command line arguments
@@ -422,7 +417,6 @@ public class StudentLibrarySystem extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAddNewBook;
     private javax.swing.JButton btnBookFirst;
     private javax.swing.JButton btnBookLast;
     private javax.swing.JButton btnBookNext;
@@ -431,6 +425,7 @@ public class StudentLibrarySystem extends javax.swing.JFrame {
     private javax.swing.JButton btnDisplayStudentInformation;
     private javax.swing.JButton btnExitProgram;
     private javax.swing.ButtonGroup btnGrpSearchBySelected;
+    private javax.swing.JButton btnReturnBook;
     private javax.swing.JButton btnSearchBySelected;
     private javax.swing.JButton btnStudentFirst;
     private javax.swing.JButton btnStudentLast;
