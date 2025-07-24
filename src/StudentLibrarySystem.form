@@ -102,7 +102,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="30" red="2" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Student and Book Management"/>
+        <Property name="text" type="java.lang.String" value="Student Library System"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JPanel" name="pnlStudentInfo">
@@ -231,84 +231,77 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="lblPrice" alignment="0" max="32767" attributes="0"/>
-                              <Component id="lblBookISBN" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtBookISBN" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtPrice" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="lblBookAuthor" alignment="0" max="32767" attributes="0"/>
                               <Component id="lblBookTitle" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="txtBookTitle" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtBookAuthor" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Component id="btnAddNewBook" max="32767" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="lblAvailable" alignment="0" max="32767" attributes="0"/>
-                              <Component id="lblCategory" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblBookISBN" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtBookISBN" min="-2" pref="180" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblAvailable" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtAvailable" min="-2" pref="180" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="btnBookPrevious" linkSize="5" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="btnBookNext" linkSize="5" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="btnBookFirst" linkSize="5" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="btnBookLast" linkSize="5" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtCategory" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtAvailable" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="btnBookPrevious" linkSize="5" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="btnBookNext" linkSize="5" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="btnBookFirst" linkSize="5" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="btnBookLast" linkSize="5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="74" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblBookTitle" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtBookTitle" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblBookTitle" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtBookTitle" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtBookAuthor" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblBookAuthor" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <Component id="btnAddNewBook" min="-2" pref="36" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="txtBookAuthor" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblBookAuthor" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblBookISBN" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtBookISBN" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="txtPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblCategory" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtCategory" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txtAvailable" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblAvailable" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -320,7 +313,7 @@
                       <Component id="btnBookFirst" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnBookLast" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace pref="26" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -358,27 +351,6 @@
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblPrice">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="\ud83d\udcb2 Price:" containsInvalidXMLChars="true"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="txtPrice">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lblCategory">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="\ud83d\udcda Category:" containsInvalidXMLChars="true"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="txtCategory">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="focusable" type="boolean" value="false"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JLabel" name="lblAvailable">
           <Properties>
             <Property name="text" type="java.lang.String" value="&#x2714;&#xfe0f; Available:"/>
@@ -408,6 +380,14 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Last"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAddNewBook">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Return Book"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddNewBookActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
